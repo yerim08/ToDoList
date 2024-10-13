@@ -1,46 +1,30 @@
-# Getting Started with Create React App
+# ❓ ToDo List 사용설명서
+<img src="https://github.com/user-attachments/assets/968359e9-8381-4ee2-85fd-76fe168a35f6" width="400" />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- **React와** **Typescript를** 이용하여 제작한 간단한 Single Page Application(SPA)입니다.
+- **Styled-Components**을 사용해 CSS-in-JS 방식의 앱 디자인을 진행했습니다.
+- **Axios를** 이용한 api 서버와 통신하였습니다.
+- **LocalStorage**에 데이터를 저장하여 새로고침 후에도 데이터가 유지됩나다.
+- 할 일 추가, 완료, 삭제 기능이 포함되어 있습니다.
 
-## Available Scripts
 
-In the project directory, you can run:
+## 설치 및 실행 방법
 
-### `npm start`
+### 1. 저장소 코드 복제
+``` git clone https://github.com/yerim08/ToDoList.git ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 2. 디렉토리 이동
+``` cd ToDoList ```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 3. 필요한 패키기 설치
+``` npm install ```
 
-### `npm test`
+### 4. 프로젝트 실행
+``` npm start ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 기능 소개
+- 할 일을 입력한 후 + 버튼을 누르면 할 일이 추가됩니다.
+- 체크 박스를 누르면 할 일이 완료됩니다.
+- 할 일을 삭제하려면 - 버튼을 누르면 됩니다.
+- 새로고침 후에도 입력하거나 삭제하거나 완료된 할 일 목록이 유지됩니다.
