@@ -5,11 +5,11 @@ import { ToDo } from "../types/toDoTypes";
 const ToDoItemListContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 15px 10px;
+  margin: 15px 0;
   padding: 0 15px;
   gap: 8px;
   flex-grow: 1;
-  overflow-y: scroll;
+  overflow-y: auto;
 `;
 
 interface ToDoItemListProps {
@@ -25,14 +25,16 @@ export default function ToDoItemList({
 }: ToDoItemListProps) {
   return (
     <ToDoItemListContainer>
-      {todos.map((todo) => (
-        <ToDoItem
-          key={todo.id}
-          todo={todo}
-          handleCompleteTodo={handleCompleteTodo}
-          handleDeleteTodo={handleDeleteTodo}
-        />
-      ))}
+      {todos
+        .sort((a, b) => b.id - a.id)
+        .map((todo) => (
+          <ToDoItem
+            key={todo.id}
+            todo={todo}
+            handleCompleteTodo={handleCompleteTodo}
+            handleDeleteTodo={handleDeleteTodo}
+          />
+        ))}
     </ToDoItemListContainer>
   );
 }
