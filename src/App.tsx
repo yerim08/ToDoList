@@ -14,6 +14,8 @@ const Container = styled.div`
 `;
 
 const ToDoContainer = styled.div`
+  display: flex;
+  flex-direction: column;
   width: 400px;
   height: 80vh;
   background-color: white;

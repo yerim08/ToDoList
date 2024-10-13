@@ -5,8 +5,11 @@ import { ToDo } from "../types/toDoTypes";
 const ToDoItemListContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  margin: 15px 10px;
+  padding: 0 15px;
   gap: 8px;
+  flex-grow: 1;
+  overflow-y: scroll;
 `;
 
 interface ToDoItemListProps {

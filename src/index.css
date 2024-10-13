@@ -1,3 +1,16 @@
 body {
   margin: 0;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #6e6e6e; /* 스크롤바 막대 색상 */
+  border-radius: 15px;
+}
+/* 스크롤이 움직이는 뒷 배경 */
+::-webkit-scrollbar-track {
+  background: #bdbdbd; /* 스크롤바 뒷 배경 색상 */
+  border-radius: 15px;
+}

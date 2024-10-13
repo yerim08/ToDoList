@@ -3,7 +3,7 @@ import { ToDo } from "../types/toDoTypes";
 
 const ToDoItemContainer = styled.div`
   display: flex;
-  height: 40px;
+  min-height: 42px;
   gap: 10px;
   align-items: center;
 `;
